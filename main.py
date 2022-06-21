@@ -11,7 +11,7 @@ root.title('Python MP3 Music player App ')
 def addsongs():
     temp_song=filedialog.askopenfilenames(initialdir="Music/",title="Choose a song", filetypes=(("mp3 Files","*.mp3"),))
     for s in temp_song:
-        s=s.replace("C:/Users/kiana/python-mp3-music-player/","")
+        s=s.replace("C:/Users/YOUR_USER_NAME_HERE/python-mp3-music-player/","")
         songs_list.insert(END,s)
 def deletesong():
     curr_song=songs_list.curselection()
